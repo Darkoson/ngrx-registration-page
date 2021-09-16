@@ -9,7 +9,7 @@ import { environment } from "src/environments/environment";
 import { AuthResponseInterface } from "../types/auth-response.interface";
 
 @Injectable({providedIn: 'root'})
-export class authService {
+export class AuthService {
     constructor(private http: HttpClient) { }
 
     register(data: RegisterRequestInterface) : Observable<CurrentUserInterface>{
